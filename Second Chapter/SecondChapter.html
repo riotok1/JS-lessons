@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Second Chapter</title>
+</head>
+<body>
+	
+	<h1>Длина окружности</h1>
+	<table>
+		<script type="text/javascript">
+			
+			//Функция, возвращающая диаметр окружности
+			function circleLength (d) {
+				let l;
+				l = d * Math.PI;
+				return l;
+			}
+
+			window.document.write('<tr><td>', 2,'</td>');
+			window.document.write('<td>', circleLength(2),'</td></tr>');
+			window.document.write('<tr><td>', 5,'</td>');
+			window.document.write('<td>', circleLength(5),'</td></tr>');
+			window.document.write('<tr><td>', 10,'</td>');
+			window.document.write('<td>', circleLength(10),'</td></tr>');
+			window.document.write('<tr><td>', 20,'</td>');
+			window.document.write('<td>', circleLength(20),'</td></tr>');
+		</script>
+	</table>
+
+
+	<script type="text/javascript">
+		//Необязательные параметры в функции
+		function circleLength1 (d) {
+			d = (d === undefined) ? 2 : d;
+			let l; 
+			l = d * Math.PI;
+			return l;
+		}
+	</script>
+
+	
+	<script type="text/javascript">
+		function factorial (val) {
+			if(val == 1)
+				return 1;
+			else
+				return val * factorial(val - 1);
+		}
+		const a = window.prompt('Введите число', 1);
+		window.document.write('<p>', factorial(a), '</p>');
+
+		// Стрелочные функции
+		let io = (d) => d * Math.PI;
+
+		// Либо
+		let io1 = (d) => {
+			l = d * Math.PI;
+			return l;
+		}
+	</script>
+
+</body>
+</html>
