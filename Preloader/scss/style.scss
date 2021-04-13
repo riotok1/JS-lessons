@@ -1,0 +1,311 @@
+@import "null.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+//Preloader
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+#preloader.hide-preloader {
+    animation: hidePreloader 1s;
+}
+
+#preloader.preloader-hidden {
+    display: none;
+}
+
+@keyframes hidePreloader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+// Style for a header
+#header{
+    background: url('../img/headerBG.png') no-repeat;
+    background-size: 100%;
+    padding: 15px 0px 220px 0px;
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+        .logo{
+            font-family: Dancing Script;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            font-size: 60px;
+            color: #fff;
+        }
+        .navGroup{
+            display: flex;
+            .navItem{
+                margin-right: 28px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                .navLink{
+                    font-family: Open Sans;
+                    font-weight: 300;
+                    letter-spacing: 0.05em;
+                    font-size: 16px;
+                    color: #fff;
+                    transition: all .2s linear;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    .offer{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 150px;
+        .offerGroup{
+            display: flex;
+            flex-direction: column;
+            .offerTitle{
+                font-family: Open Sans;
+                font-weight: 300;
+                letter-spacing: 0.05em;
+                font-size: 40px;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+            .offerBody{
+                font-family: Open Sans;
+                font-weight: 300;
+                letter-spacing: 0.05em;
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            .offerBtn{
+                font-family: Open Sans;
+                font-weight: 400;
+                letter-spacing:0.05em;
+                font-size: 25px;
+                color: #fff;
+                width: 150px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border: 2px solid #fff;
+                border-radius: 10px;
+                transition: all .2s linear;
+                &:hover{
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+//Style for a section digits
+#digits{
+    padding: 80px 0px 100px 0px;
+    .colorsGroup{
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        .colorsTitle{
+            font-family: Open Sans;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 28px;
+        }
+        .colorsBody{
+            font-family: Open Sans;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            line-height: 22px;
+            font-size: 14px;
+            color: #000;
+            width: 970px;
+            margin-bottom: 55px;
+        }
+        .fifthColors{
+            display: flex;
+            width: 180px;
+            height: 30px;
+            .colorItem{
+                width: 20%;
+                height: 100%;
+                &:nth-child(1)
+                {
+                    background: #ee732f;
+                }
+                &:nth-child(2)
+                {
+                    background: #f74c55;
+                }
+                &:nth-child(3)
+                {
+                    background: #2d5f3b;
+                }
+                &:nth-child(4)
+                {   
+                    background: #404040;
+                }
+                &:nth-child(5)
+                {
+                    background: #fb636b;
+                }
+            }
+        }
+    }
+}
+
+//Style for a section colorTriggers
+#colorTriggers{
+    .triggersGroup{
+        width: 100%;
+        display: flex;
+        .colTrigger{
+            &:nth-child(1)
+            {
+                width: 35%;
+                padding: 30px 0px 30px 160px;
+                background: #404040;
+            }
+            &:nth-child(2)
+            {
+                width: 30%;
+                padding: 30px 40px 30px 100px;
+                background: #f74c55;
+            }
+            &:nth-child(3)
+            {
+                width: 35%;
+                padding: 30px 160px 30px 80px;
+                background: #2d5f3b;
+            }
+            .triggerContent{
+                .triggerTitle{
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    letter-spacing: 0.05em;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-bottom: 15px;
+                    .fa-chart-line, .fa-tablet-alt, .fa-cloud-upload-alt{
+                        margin-right: 10px;
+                    }
+                }
+                .triggerBody{
+                    font-family: Open Sans;
+                    font-weight: 300;
+                    letter-spacing: 0.05em;
+                    line-height: 22px;
+                    font-size: 14px;
+                    color: #fff;
+                    width: 270px;
+                }
+            }
+        }
+        .plusGroup{
+            display: flex;
+            justify-content: flex-end;
+            .plus{
+                width: 33px;
+                height: 33px;
+                background: #272727;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                cursor: pointer;
+                transition: all .2s linear;
+                &:hover{
+                    background: #000;
+                }
+                .fas{
+                    font-size: 20px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+//Style for a section music
+#music{
+    background: url('../img/musicBg.png') no-repeat;
+    background-size: 100%;
+    padding: 170px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .musicTitle{
+        font-family: Open Sans;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        line-height: 50px;
+        font-size: 42px;
+        color: #fff;
+        width: 655px;
+        margin-bottom: 40px;
+    }
+    .musicBtn{
+        font-family: Open Sans;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        font-size: 24px;
+        color: #fff;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        transition: all .2s linear;
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+    }
+}
+
+//Style for a section tenColors
+#tenColors{
+    background: url('../img/colorsBg.png') no-repeat;
+    background-size: 100%;
+    padding: 5px 0px;
+}
+
+//Style for a footer
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px;
+    .footerCopyright{
+        font-family: Open Sans;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        font-size: 16px;
+        color: #000;
+    }
+}
