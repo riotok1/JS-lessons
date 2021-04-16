@@ -1,0 +1,36 @@
+body {
+  background: #000;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 750px;
+  height: 600px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav div {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+nav div:last-child {
+  margin-right: 0px;
+}
+nav div:hover, nav div.active {
+  color: #000;
+  background: #fff;
+}
